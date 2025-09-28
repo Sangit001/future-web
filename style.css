@@ -219,7 +219,7 @@ color: black;
 color: white;
 background-color: black;
 }
-.box p:hover{
+.box a:hover{
     text-decoration: underline;
     cursor: pointer;
     color: purple;
