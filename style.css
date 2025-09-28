@@ -212,6 +212,9 @@ font-size: 15px;
     border: 2px solid black;
     padding-bottom: 5px;
 }
+.box a{
+color: black;
+}
 .box h3{
 color: white;
 background-color: black;
