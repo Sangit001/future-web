@@ -5,6 +5,7 @@
 }
 span{
     user-select: none;
+    display: block;
 }
 body{
     font-size: 14px;
@@ -266,7 +267,7 @@ footer{
     gap: 10px;
 }
 .input-box input{
-    width:300px;
+    max-width:300px;
     border-radius:20px ;
     height: 40px;
     border: 1px solid black;
@@ -280,7 +281,7 @@ footer{
     overflow: scroll;
 }
 .input-send-button{
-    min-width: 300px;
+    min-width: 150px;
     height: 40px;
     background-color: #1877f2;
     border:none;
@@ -299,4 +300,66 @@ footer{
     justify-content: center;
     background-color:var(--second-color);
     padding: 14px;
+}
+.social-media{
+    display: flex;
+    gap: 10px;
+}
+
+/* responsive */
+
+@media (max-width:713px){
+
+
+    
+}
+@media(max-width:819px){
+    .bottom-profile{
+    overflow: hidden;
+    min-width: 100px;
+    gap: 20px;}
+
+        .nav-bar{
+width: auto;
+    }
+    .right-nav{
+        width: auto;
+        display: none;
+    }
+    .left-nav{
+        justify-content: space-between;
+        padding: 0px 30px;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media(max-width:482px){
+
+.bottom-profile{
+overflow-x:scroll;
+}
+
+
+}
+
+@media(max-width:800px){
+    .profile-title{
+        width: 100%;
+    }
+    .profile-title p{
+        width: 90%;
+    }
+    .top{
+        padding: 0px;
+    }
+    .social-media{
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .slash{
+        display: none;
+    }
 }
